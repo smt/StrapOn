@@ -1,0 +1,153 @@
+/* Project Styles */
+
+//Type Styles
+
+body {
+	font-family: adelle;
+	font-style: normal;
+	font-weight: 400;
+}
+h1 { 
+	font-style: normal; 
+	font-weight: 400; 
+	font-family: atrament-web; 
+	font-size: 69px; 
+	line-height: 64px; 
+	margin-bottom: 39px; 
+}
+h2 { 
+	font-style: normal; 
+	font-weight: 400; 
+	font-family: adelle; 
+	font-size: 33px; 
+	line-height: 47px; 
+	margin-bottom: 20px; 
+}
+h3 { 
+	font-style: normal; 
+	font-weight: 600; 
+	font-family: adelle; 
+	font-size: 24px; 
+	line-height: 27px; 
+	margin-bottom: 26px; 
+}
+h4 { 
+	font-style: normal; 
+	font-weight: 700; 
+	font-family: adelle; 
+	margin-bottom: 0px; 
+	line-height: 28px; 
+}
+h5 { 
+	font-style: normal; 
+	font-weight: 400; 
+	font-family: adelle; 
+}
+h6 { 
+	font-style: normal; 
+	font-weight: 400; 
+	font-family: adelle; 
+}
+p { 
+	margin-bottom: 20px; 
+	font-style: normal; 
+	font-weight: 400; 
+	font-family: adelle; 
+	line-height: 25px; 
+}
+nav.primary { 
+	font-style: normal; 
+	font-weight: 400; 
+	font-family: parisine-std-sombre; 
+	font-size: 29px; 
+}
+aside {
+	text-indent: 0px; 
+	font-weight: 100; 
+	font-family: adelle; 
+}
+blockquote {	
+	margin-top: 25px;
+	padding-left: 40px; 
+	& * {
+		text-indent: 0px; 
+		font-style: italic; 
+		font-weight: 100; 
+		font-family: adelle; 
+	}
+}
+a {
+	color: red;
+}
+$blueprint-button-font-family: "adelle";
+
+//Button Styles
+
+.button {
+  @include anchor-button;
+  @include button-colors;
+  @include button-hover-colors;
+  @include button-active-colors;
+}
+
+//Breakpoints (num of columns)
+
+	//default: mobile   : 7;
+	$desktop          	: 12;
+
+// Container
+
+.page {
+  @include container($total-columns, $desktop);
+  margin-top: $grid-padding;
+}
+
+// Layout for 12 column
+
+@include at-breakpoint($desktop) {
+  .banner { @include prefix(2,$desktop); }
+  .pagenav { @include span-columns(2,$desktop); }
+  .main {
+    $main-columns: 10;
+    @include span-columns($main-columns omega, $desktop);
+    .content { @include span-columns(7,$main-columns) }
+    .summary { @include span-columns(3 omega, $main-columns) }
+  }
+}
+
+// Universal styles (building up from mobile-first)
+.panel {
+	margin-bottom: $grid-padding;
+}
+nav {
+	&.primary {
+		background: #000;
+		padding: $grid-padding;
+		color: #fff;
+	}
+	&.pagenav {
+		ul {
+			list-style: none;
+			@include clearfix;
+			li {
+				float: left;
+				padding: 5px 5px 5px 0;
+			}
+		}
+	}
+}
+.content {
+	margin: 0 0 $grid-padding*2;
+}
+.contentinfo {
+  clear: both;
+  margin: 0 - $grid-padding;
+  padding: $grid-padding;
+  background: #eee;
+
+  // Need to include this to blow up in the desktop view
+  @include at-breakpoint($desktop) {
+    margin: 0;
+    @include pad(2,3,$desktop);
+  }
+}

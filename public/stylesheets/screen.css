@@ -1,0 +1,314 @@
+/* line 4, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 18, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+.bp-reset-element, body, h1, h2, h3, h4, h5, h6, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, blockquote, q, th, td, caption, table,
+div, span, object, iframe, p,
+pre, a, abbr, acronym, address,
+code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend,
+caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 21, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote, q {
+  quotes: "" "";
+}
+/* line 67, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+/* line 22, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+th, td, caption {
+  float: none !important;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 24, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* Standard grid */
+/* Lets try a mobile-first grid */
+/* Project Styles */
+/* line 5, ../../scss/partials/_project.scss */
+body {
+  font-family: adelle;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* line 10, ../../scss/partials/_project.scss */
+h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-family: atrament-web;
+  font-size: 69px;
+  line-height: 64px;
+  margin-bottom: 39px;
+}
+
+/* line 18, ../../scss/partials/_project.scss */
+h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-family: adelle;
+  font-size: 33px;
+  line-height: 47px;
+  margin-bottom: 20px;
+}
+
+/* line 26, ../../scss/partials/_project.scss */
+h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-family: adelle;
+  font-size: 24px;
+  line-height: 27px;
+  margin-bottom: 26px;
+}
+
+/* line 34, ../../scss/partials/_project.scss */
+h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-family: adelle;
+  margin-bottom: 0px;
+  line-height: 28px;
+}
+
+/* line 41, ../../scss/partials/_project.scss */
+h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-family: adelle;
+}
+
+/* line 46, ../../scss/partials/_project.scss */
+h6 {
+  font-style: normal;
+  font-weight: 400;
+  font-family: adelle;
+}
+
+/* line 51, ../../scss/partials/_project.scss */
+p {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: adelle;
+  line-height: 25px;
+}
+
+/* line 58, ../../scss/partials/_project.scss */
+nav.primary {
+  font-style: normal;
+  font-weight: 400;
+  font-family: parisine-std-sombre;
+  font-size: 29px;
+}
+
+/* line 64, ../../scss/partials/_project.scss */
+aside {
+  text-indent: 0px;
+  font-weight: 100;
+  font-family: adelle;
+}
+
+/* line 69, ../../scss/partials/_project.scss */
+blockquote {
+  margin-top: 25px;
+  padding-left: 40px;
+}
+/* line 72, ../../scss/partials/_project.scss */
+blockquote * {
+  text-indent: 0px;
+  font-style: italic;
+  font-weight: 100;
+  font-family: adelle;
+}
+
+/* line 79, ../../scss/partials/_project.scss */
+a {
+  color: red;
+}
+
+/* line 86, ../../scss/partials/_project.scss */
+.button {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin: 0.7em 0.5em 0.7em 0;
+  border-width: 1px;
+  border-style: solid;
+  font-family: "adelle";
+  font-size: 100%;
+  line-height: 130%;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 5px 10px 5px 7px;
+  background-color: whitesmoke;
+  border-color: #eeeeee #dedede #dedede #eeeeee;
+  color: #565656;
+}
+/* line 75, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+.button img {
+  margin: 0 3px -3px 0 !important;
+  padding: 0;
+  border: none;
+  width: 16px;
+  height: 16px;
+  float: none;
+}
+/* line 62, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+.button:hover {
+  background-color: #dff4ff;
+  border-color: #d2f1ff #c2e1ef #c2e1ef #d2f1ff;
+  color: #336699;
+}
+/* line 47, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+.button:active {
+  background-color: #6299c5;
+  border-color: #72a9d5 #6299c5 #6299c5 #72a9d5;
+  color: white;
+}
+
+/* line 100, ../../scss/partials/_project.scss */
+.page {
+  *zoom: 1;
+  max-width: 34em;
+  _width: 34em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 1em;
+}
+/* line 38, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 61em) {
+  /* line 100, ../../scss/partials/_project.scss */
+  .page {
+    max-width: 59em;
+    _width: 59em;
+  }
+}
+
+@media (min-width: 61em) {
+  /* line 108, ../../scss/partials/_project.scss */
+  .banner {
+    padding-left: 16.949%;
+  }
+
+  /* line 109, ../../scss/partials/_project.scss */
+  .pagenav {
+    width: 15.254%;
+    float: left;
+    margin-right: 1.695%;
+    display: inline;
+  }
+
+  /* line 110, ../../scss/partials/_project.scss */
+  .main {
+    width: 83.051%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -1em;
+    display: inline;
+  }
+  /* line 113, ../../scss/partials/_project.scss */
+  .main .content {
+    width: 69.388%;
+    float: left;
+    margin-right: 2.041%;
+    display: inline;
+  }
+  /* line 114, ../../scss/partials/_project.scss */
+  .main .summary {
+    width: 28.571%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -1em;
+    display: inline;
+  }
+}
+/* line 119, ../../scss/partials/_project.scss */
+.panel {
+  margin-bottom: 1em;
+}
+
+/* line 123, ../../scss/partials/_project.scss */
+nav.primary {
+  background: #000;
+  padding: 1em;
+  color: #fff;
+}
+/* line 129, ../../scss/partials/_project.scss */
+nav.pagenav ul {
+  list-style: none;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 132, ../../scss/partials/_project.scss */
+nav.pagenav ul li {
+  float: left;
+  padding: 5px 5px 5px 0;
+}
+
+/* line 139, ../../scss/partials/_project.scss */
+.content {
+  margin: 0 0 2em;
+}
+
+/* line 142, ../../scss/partials/_project.scss */
+.contentinfo {
+  clear: both;
+  margin: -1em;
+  padding: 1em;
+  background: #eee;
+}
+@media (min-width: 61em) {
+  /* line 142, ../../scss/partials/_project.scss */
+  .contentinfo {
+    margin: 0;
+    padding-left: 16.949%;
+    padding-right: 25.424%;
+  }
+}
