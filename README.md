@@ -15,15 +15,19 @@ StrapOn is supported by:
 Usage
 -----
 _Requirements:_
+
 1. Ruby
 
 _On first use:_
+
 `$ bundle install` downloads all gem dependacies.
 
-`$ rake StrapOn:start` Starts webserver at http://localhost:4000
-ctrl+c Ends the web server process and generates a static version of the site at ./_site/
+`$ rake StrapOn:start` 
+Starts webserver at http://localhost:4000, auto-compiles all SCSS and SASS (no need to run compass watch).
+Ctrl+C Ends the web server process and generates a static version of the site at ./_site/
 
-`$ rake StrapOn:export` generates a static version of the site at ./_site/ without starting the webserver
+`$ rake StrapOn:export` 
+Generates a static version of the site at ./_site/ without starting the webserver.
 
 Changes
 -------
