@@ -1,0 +1,70 @@
+// Buttons
+
+.button {
+  @include anchor-button;
+  @include button-colors;
+  @include button-hover-colors;
+  @include button-active-colors;
+
+	&:hover {
+		background-color: darken(#eee, 10%);
+		border-color: darken(#eee, 15%);
+	}
+	&:active {
+		background-color: darken(#eee, 20%);
+		border-color: darken(#eee, 30%);
+	}
+
+	&.primary {
+		background-color: #0a5cb9;
+		color: #fff;
+
+		&:hover {
+			background-color: lighten(#0a5cb9, 10%);
+
+		}
+		&:active {
+			background-color: lighten(#0a5cb9, 20%);
+
+		}
+	}
+	&.disabled, &.disabled:hover, &.disabled:active {
+		background-color: #eee;
+		color: darken(#eee, 10%);
+		border-color: darken(#eee, 5%);
+	}
+	&.start {
+		float: right;
+	}
+}
+
+.pushbuttons {
+	.button {
+		font-size: 14px;
+		margin-top: 0;
+		margin-bottom: $grid-padding/2;
+		&.selected {
+			background-color: darken(#eee, 10%);
+			border-color: darken(#eee, 15%);
+		}
+	}
+	&.favorite {
+		float: right;
+			.button {
+			margin: $grid-padding $grid-padding/2 $grid-padding $grid-padding/2;
+
+				&.selected {
+				background-color: #FFFCD1;
+
+			}
+		}
+		
+	}
+}
+.share-buttons {
+	text-align: right;
+	@include span-columns(2 omega,12);
+	.panel {
+		padding-right: 0;
+	}
+}
