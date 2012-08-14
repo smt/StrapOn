@@ -1,7 +1,7 @@
 StrapOn (NEW!)
 ==============
 
-StrapOn is a Responsive HTML Prototyping framework that uses the Serve gem to generate static websites using any number of tempating languages.
+StrapOn is a responsive, static, HTML prototyping framework that uses the Serve gem to generate static websites using any number of markup languages.
 
 StrapOn is supported by:
 -------------------------
@@ -9,6 +9,7 @@ StrapOn is supported by:
 * Compass
 * Susy (for semantically-friendly responsive grids)
 * Serve (local webserver, sass compiler, template assembler, etc..)
+* Font-Awesome (for font/svg based icons)
 * Ruby (runs all of these wonderful tools)
 * ERB, Haml, HTML, Markdown, Textile (Your markup language of choice..)
 
@@ -20,14 +21,24 @@ _Requirements:_
 
 _On first use:_
 
-`$ bundle install` downloads all gem dependacies.
+`$ bundle install` 
 
-`$ rake StrapOn:start` 
+Downloads all gem dependacies.
+
+`$ rake StrapOn:start`
+
 Starts webserver at http://localhost:4000, auto-compiles all SCSS and SASS (no need to run compass watch).
 Ctrl+C Ends the web server process and generates a static version of the site at ./_site/
 
-`$ rake StrapOn:export` 
+`$ rake StrapOn:export`
+
 Generates a static version of the site at ./_site/ without starting the webserver.
+
+_Structure_
+
+* All layouts and partials are in the views directory
+* _layout.html.erb in any directory is the default layout for all other files in that directory unless otherwise specified.
+
 
 Changes
 -------
