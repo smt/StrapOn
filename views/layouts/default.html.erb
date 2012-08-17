@@ -1,11 +1,14 @@
+<!DOCTYPE html>
+<html>
 <%= render "/shared/headref" %>
 
 <body class="<%= @title %>">
-  <%= render "/shared/nav-main" %>
-    
-        <%= yield %>
-  <section class="page">
-    <%= render "/shared/footer" %>
-  </section>
+    <%= render "/shared/nav-main" %>
+
+    <%= yield %>
+
+    <section class="page">
+        <%= render "/shared/footer" %>
+    </section>
 </body>
 </html>
