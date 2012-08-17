@@ -1,0 +1,83 @@
+/* ===========================================================================
+   Reset */
+@import "reset";
+
+/* ===========================================================================
+   Base Styles */
+@import "typography";
+@import "table";
+@import "form";
+@import "helpers";
+
+
+/* ===========================================================================
+   CHANGEME */
+body {
+  font-family: adelle;
+  font-style: normal;
+  font-weight: 400;
+}
+h1 {
+  font-family: adelle;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+  margin: 0 0 26px;
+}
+h2 {
+  font-family: adelle;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0;
+}
+h3 {
+  font-family: adelle;
+  font-style: normal;
+  font-weight: 700;
+}
+h4 {
+  font-family: adelle;
+  font-style: normal;
+  font-weight: 700;
+}
+h5 {
+  font-family: adelle;
+  font-style: normal;
+  font-weight: 400;
+}
+h6 {
+  font-family: adelle;
+  font-style: normal;
+  font-weight: 400;
+}
+p {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: adelle;
+  line-height: 25px;
+}
+nav.primary {
+  font-style: normal;
+  font-weight: 400;
+  font-family: parisine-std-sombre;
+  font-size: 29px;
+}
+aside {
+  text-indent: 0px;
+  font-weight: 100;
+  font-family: adelle;
+}
+blockquote {
+  margin-top: 25px;
+  padding-left: 40px;
+  & * {
+    text-indent: 0px;
+    font-style: italic;
+    font-weight: 100;
+    font-family: adelle;
+  }
+}

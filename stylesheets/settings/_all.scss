@@ -1,0 +1,29 @@
+//
+// Typography settings
+//
+
+$base-font-family     : unquote("'Helvetica Neue', HelveticaNeue, Arial, Helvetica, sans-serif");
+$base-font-size       : 16px;
+$base-line-height     : 1.2;
+
+$fixed-font-family    : unquote("Inconsolata, Consolas, Courier New, monospace");
+$fixed-font-size      : 95%;
+$fixed-line-height    : 1.2;
+
+$indented-paragraphs  : false;
+$reversed-text        : false;
+
+//
+// Text colors
+//
+
+$text-color           : #333;
+$loud-color           : false;
+$header-color         : $text-color;
+$link-color           : red;
+
+//
+// Blueprint settings
+//
+
+$blueprint-button-font-family: "adelle";

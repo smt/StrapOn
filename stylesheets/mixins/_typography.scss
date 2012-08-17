@@ -117,14 +117,14 @@
 @mixin fixed-font-elements($font-family: $fixed-font-family, $font-size: $fixed-font-size, $line-height: $fixed-line-height) {
   code, dfn, kbd, samp, tt {
     font-family: $font-family;
-    font-size: 95%;
+    font-size: $font-size;
     color: soften($text-color);
   }
   pre {
     background: soften($text-color);
     color: invert($text-color);
     font-family: $font-family;
-    font-size: 95%;
+    font-size: $font-size;
     line-height: $line-height;
     margin: 1.5em 0;
     padding: 1em;

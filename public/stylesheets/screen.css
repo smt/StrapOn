@@ -50,56 +50,202 @@ a img {
 }
 
 body {
+  color: #333333;
+  font-family: 'Helvetica Neue', HelveticaNeue, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+strong, b {
+  color: false;
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted #999999;
+}
+
+sub, sup {
+  font-size: 85%;
+}
+
+sub {
+  vertical-align: sub;
+}
+
+sup {
+  vertical-align: super;
+}
+
+span.caps {
+  font-size: 95%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333;
+  margin: 1em 0;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 200%;
+  line-height: 0.942;
+  margin: 0.75em 0;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 170%;
+  line-height: 0.942;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 140%;
+  line-height: 1.002;
+  margin: 1.25em 0 0.5em;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 110%;
+  line-height: 1.08;
+  margin: 0.5em 0 0.5em;
+}
+
+h5 {
+  font-style: italic;
+  font-size: 110%;
+  line-height: 1.2;
+  margin: 0.65em 0;
+}
+
+h6 {
+  font-weight: bold;
+  margin-bottom: -0.75em;
+}
+
+p {
+  margin: 1em 0;
+}
+
+ul, ol, dl {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+ul, ol, dd {
+  padding-left: 2.25em;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+dt {
+  margin-top: 1em;
+}
+
+dd {
+  margin-bottom: 1em;
+}
+
+code, dfn, kbd, samp, tt {
+  font-family: Inconsolata, Consolas, Courier New, monospace;
+  font-size: 95%;
+  color: #666666;
+}
+
+pre {
+  background: #666666;
+  color: #cccccc;
+  font-family: Inconsolata, Consolas, Courier New, monospace;
+  font-size: 95%;
+  line-height: 1.2;
+  margin: 1.5em 0;
+  padding: 1em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+a:link {
+  color: red;
+  text-decoration: underline;
+}
+a:visited {
+  color: red;
+}
+a:hover, a:focus {
+  color: red;
+  text-decoration: none;
+}
+a:active {
+  color: red;
+  text-decoration: none;
+}
+
+body {
   font-family: adelle;
   font-style: normal;
   font-weight: 400;
 }
 
 h1 {
+  font-family: adelle;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 400;
-  font-family: atrament-web;
-  font-size: 69px;
-  line-height: 64px;
-  margin-bottom: 39px;
+  font-weight: 600;
+  line-height: 27px;
+  margin: 0 0 26px;
 }
 
 h2 {
-  font-style: normal;
-  font-weight: 400;
   font-family: adelle;
-  font-size: 33px;
-  line-height: 47px;
-  margin-bottom: 20px;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0;
 }
 
 h3 {
-  font-style: normal;
-  font-weight: 600;
   font-family: adelle;
-  font-size: 24px;
-  line-height: 27px;
-  margin-bottom: 26px;
+  font-style: normal;
+  font-weight: 700;
 }
 
 h4 {
+  font-family: adelle;
   font-style: normal;
   font-weight: 700;
-  font-family: adelle;
-  margin-bottom: 0px;
-  line-height: 28px;
 }
 
 h5 {
+  font-family: adelle;
   font-style: normal;
   font-weight: 400;
-  font-family: adelle;
 }
 
 h6 {
+  font-family: adelle;
   font-style: normal;
   font-weight: 400;
-  font-family: adelle;
 }
 
 p {
@@ -134,10 +280,6 @@ blockquote * {
   font-family: adelle;
 }
 
-a {
-  color: red;
-}
-
 .page {
   *zoom: 1;
   max-width: 34em;
@@ -146,6 +288,7 @@ a {
   margin-right: auto;
   padding-left: 1em;
   padding-right: 1em;
+  line-height: 1.4;
   margin-top: 1em;
 }
 .page:after {
@@ -195,11 +338,14 @@ nav.primary {
 }
 nav.pagenav ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
   *zoom: 1;
 }
 nav.pagenav ul li {
   float: left;
+  margin: 0;
   padding: 5px 5px 5px 0;
 }
 
@@ -219,16 +365,6 @@ nav.pagenav ul li {
     padding-left: 16.94915%;
     padding-right: 25.42373%;
   }
-}
-
-.band {
-  background: #eee;
-  margin-bottom: 1em;
-}
-
-.banner {
-  text-align: center;
-  padding: 1em;
 }
 
 .button {
@@ -251,6 +387,7 @@ nav.pagenav ul li {
   background-color: whitesmoke;
   border-color: #eeeeee #dedede #dedede #eeeeee;
   color: #565656;
+  text-decoration: none;
 }
 .button img {
   margin: 0 3px -3px 0 !important;
@@ -270,22 +407,35 @@ nav.pagenav ul li {
   border-color: #72a9d5 #6299c5 #6299c5 #72a9d5;
   color: white;
 }
-.button:hover {
+.button:link, .button:visited {
+  background-color: whitesmoke;
+  border-color: #eeeeee #dedede #dedede #eeeeee;
+  color: #565656;
+  text-decoration: none;
+}
+.button:hover, .button:focus {
   background-color: #d4d4d4;
   border-color: #c8c8c8;
+  text-decoration: none;
 }
 .button:active {
   background-color: #bbbbbb;
   border-color: #a2a2a2;
+  text-decoration: none;
 }
 .button.primary {
   background-color: #0a5cb9;
   color: #fff;
 }
-.button.primary:hover {
+.button.primary:link, .button.primary:visited {
+  color: #fff;
+}
+.button.primary:hover, .button.primary:focus {
+  color: #fff;
   background-color: #0d74e9;
 }
 .button.primary:active {
+  color: #fff;
   background-color: #358ef4;
 }
 .button.disabled, .button.disabled:hover, .button.disabled:active {
@@ -326,4 +476,32 @@ nav.pagenav ul li {
 }
 .share-buttons .panel {
   padding-right: 0;
+}
+
+.band {
+  background: #eee;
+  margin-bottom: 1em;
+}
+
+.banner {
+  text-align: center;
+  padding: 1em;
+}
+
+.hero-title {
+  font-style: normal;
+  font-weight: 400;
+  font-family: atrament-web;
+  font-size: 69px;
+  line-height: 64px;
+  margin: 0 0 39px;
+}
+
+.hero-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-family: adelle;
+  font-size: 33px;
+  line-height: 47px;
+  margin: 0 0 20px;
 }

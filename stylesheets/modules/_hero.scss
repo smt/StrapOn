@@ -1,0 +1,24 @@
+.band {
+  background: #eee;
+  margin-bottom: $grid-padding;
+}
+.banner {
+  text-align: center;
+  padding: $grid-padding;
+}
+.hero-title {
+  font-style: normal;
+  font-weight: 400;
+  font-family: atrament-web;
+  font-size: 69px;
+  line-height: 64px;
+  margin: 0 0 39px;
+}
+.hero-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-family: adelle;
+  font-size: 33px;
+  line-height: 47px;
+  margin: 0 0 20px;
+}
