@@ -3,6 +3,7 @@ require 'rake/task'
 require 'serve'
 
 namespace :StrapOn do
+  desc "Preview the site for development"
 	task :start do
 		puts " "
 		puts " "
@@ -19,6 +20,7 @@ namespace :StrapOn do
 		sh "serve export . _site/"
 	end
 
+  desc "Export the static site"
 	task :export do
 		puts " "
 		puts " "

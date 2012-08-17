@@ -25,5 +25,5 @@ gem 'compass'
 # Use mongrel for the Web server
 # gem 'mongrel'
 
-
+# Susy for responsive grids
 gem "susy"
