@@ -12,9 +12,11 @@ indent_style = space
 indent_size = 4
 
 ; Indentation override for all Ruby files
-[**.rb]
+[*.rb]
+indent_size = 2
+[Rakefile]
 indent_size = 2
 
 ; Indentation override for all Sass files
-[**.s[ac]ss]
+[*.s[ac]ss]
 indent_size = 2
