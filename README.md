@@ -25,12 +25,12 @@ _On first use:_
 
 Downloads all gem dependacies.
 
-`$ rake StrapOn:start`
+`$ rake start`
 
 Starts webserver at http://localhost:4000, auto-compiles all SCSS and SASS (no need to run compass watch).
 Ctrl+C Ends the web server process and generates a static version of the site at ./_site/
 
-`$ rake StrapOn:export`
+`$ rake export`
 
 Generates a static version of the site at ./_site/ without starting the webserver.
 
