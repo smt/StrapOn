@@ -16,6 +16,7 @@
 
 .page {
   @include container($total-columns, $desktop);
+  line-height: 1.4;
   margin-top: $grid-padding;
 }
 
@@ -48,9 +49,12 @@ nav {
   &.pagenav {
     ul {
       list-style: none;
+      margin: 0;
+      padding: 0;
       @include clearfix;
       li {
         float: left;
+        margin: 0;
         padding: 5px 5px 5px 0;
       }
     }
